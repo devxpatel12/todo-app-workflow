@@ -49,7 +49,7 @@ function App() {
   const [newTodo, setNewTodo] = useState('')
   const [filter, setFilter] = useState<'all' | 'active' | 'completed'>('all')
 
- const age : number = "hello"
+//  const age : number = "hello"
 
   useEffect(() => {
     saveTodos(todos)

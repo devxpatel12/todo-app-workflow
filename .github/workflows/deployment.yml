@@ -22,6 +22,7 @@ jobs:
         run: npm run lint
 
   deploy-to-aws: # <-- no spaces
+    needs: lint-and-typecheck
     name: Deploy to AWS # (optional display name)
     runs-on: ubuntu-latest
     steps:
